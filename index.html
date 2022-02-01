@@ -1,88 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>بتاع كلو</title>
-</head>
-<body class="center">   
-    <div id="parent"> 
-        <label for="url">Enter Your YouTube URL</label>
-        <br></br>
-        <input class="box" size="50" type="url" id="url" placeholder="Example : https://www.youtube.com/watch?v=ffcitRgiNDs">
-        <br></br>
-        <button class="button-52" onclick="download()">Download</button>
-    </div> 
-</body>
-<footer>
-    <div class="footer">&copy; Copyright 2022 Ammar</div>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 
-</footer>
+  <head>
+      <title>بتاع كلو</title>
+  </head>
 
-</html>
-
-<style> 
-    .center{
-        padding-top: 8%;
-        width: 100%;
-        float: left;
-        text-align: center;
-        background-image: url(bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-size: 21pt;
-        font-family: dubai;
-    }
-    .box{
-        width: 30%;
-        font-size: 21px;
-        font-family: dubai;
-    }
-
-    .button-52 {
-      font-size: 16px;
-      font-weight: 200;
-      letter-spacing: 1px;
-      padding: 13px 20px 13px;
-      outline: 0;
-      border: 1px solid black;
-      cursor: pointer;
-      position: relative;
-      background-color: rgba(0, 0, 0, 0);
-      user-select: none;
-      -webkit-user-select: none;
-      touch-action: manipulation;
-    }
-
-    .button-52:after {
-      content: "";
-      background-color: ghostwhite;
-      width: 100%;
-      z-index: -1;
-      position: absolute;
-      height: 100%;
-      top: 7px;
-      left: 7px;
-      transition: 0.2s;
-    }
-
-    .button-52:hover:after {
-      top: 0px;
-      left: 0px;
-    }
-
-    @media (min-width: 768px) {
-      .button-52 {
-        padding: 13px 50px 13px;
-      }
-    }
+    <body class="center bg">   
+        <div id="parent"> 
+            <label>Enter Your YouTube URL</label>
+            <br></br>
+            <input class="box" size="50" type="url" id="videolink" placeholder="Example : https://www.youtube.com/watch?v=ffcitRgiNDs">
+            <br></br>
+            <button class="button-52" onclick="download()">Download</button>
+        </div> 
+    </body>
     
-    .footer{
-        padding-top: 25%;
-        padding-left: 2%;
-        font-size: 8px;
-        text-align: left;
-        position: absolute;
-        bottom: 1;
-        left: 1;
-        color: yellowgreen;
-    }
-</style>
+  <footer>
+      <p class="footer">&copy; Copyright 2022 <a href="https://twitter.com/SuperAmmar77" target="_blank">Ammar</a></p>
+
+  </footer>
+</html>
